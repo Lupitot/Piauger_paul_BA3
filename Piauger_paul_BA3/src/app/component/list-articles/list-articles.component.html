@@ -1,0 +1,12 @@
+<div class="contentAllItem">
+  <app-one-article
+    *ngFor="let item of resultArticle"
+    [name]="item.Name"
+    [image]="item['Closet Image']"
+    [season]="item['Seasonal Availability']"
+    [Buy]="item.Buy"
+    [ID]="item['Unique Entry ID']"
+    (addArticle)="callBackAddArticle($event)"
+  >
+  </app-one-article>
+</div>
